@@ -44,11 +44,3 @@ LOCAL_CFLAGS := -g -DUSE_LIBLOG
 LOCAL_SHARED_LIBRARIES := libcutils
 
 include $(BUILD_SHARED_LIBRARY)
-
-# Static library for target
-# ========================================================
-
-LOCAL_MODULE := libusbhost
-LOCAL_SRC_FILES := usbhost.c
-
-include $(BUILD_STATIC_LIBRARY)
